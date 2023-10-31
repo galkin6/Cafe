@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+ <link rel="stylesheet" href="scss/style.css">
+ <link rel="stylesheet" href="css/media.css">
+ <title>Крутой программист</title>
+</head>
+
+<body>
+
+ <img class="christmas-tree" src="image/Christmas-tree.svg" alt="Christmas-tree">
+ <header id="header" class="header">
+  <div class="container">
+   <img class="hat-santa" src="image/hat-santa.svg" alt="hat-santa">
+   <nav class="header__nav">
+    <ul class="header__menu">
+     <a href="#popup-slider">
+      <li class="header__menu-item">О нас</li>
+     </a>
+     <a href="#popup-menu">
+      <li class="header__menu-item">Меню</li>
+     </a>
+     <a href="index.html">
+      <h1 class="header__logo"><span class="header__title-h1">Михалыч</span class="header__subtitle"><span>Кафе &
+        Бар</span></h1>
+     </a>
+     <a href="#popup-deliver">
+      <li class="header__menu-item">Доставка</li>
+     </a>
+     <a href="#popup-contact">
+      <li class="header__menu-item">Контакты</li>
+     </a>
+    </ul>
+
+   </nav>
+  </div>
+
+ </header>
+
+ <main class="main">
+  <section class="main__section">
+   <div class="main__wrapper">
+    <div class="main__left">
+     <a href="#popup" class="main__title-left main__title"><span class="title-span">
+       ЗАБРОНИРОВАТЬ
+       СТОЛИК
+      </span></a>
+    </div>
+    <div class="main__right">
+     <a href="#popup-menu" class="main__title-right main__title"><span class="title-span">ОЗНАКОМИТЬСЯ С МЕНЮ</span></a>
+    </div>
+   </div>
+  </section>
+
+  <div id="popup-slider" class="popup-slider">
+   <a class="popup-area" href="#"></a>
+   <div class="popup-slider__body">
+    <div class="popup-slider__content">
+     <h2 class="popup-menu__title modal-title">О нас</h2>
+     <div class="slider middle">
+      <a href="#" class="popup-slider__close">X</a>
+      <div class="slides">
+       <input type="radio" name="r" id="r1" checked>
+       <input type="radio" name="r" id="r2" checked>
+       <input type="radio" name="r" id="r3" checked>
+       <input type="radio" name="r" id="r4" checked>
+       <div class="slide interier-1"><img src="image/interier-1.jpg" alt="interier-1"></div>
+       <div class="slide interier-2"><img src="image/interier-2.jpg" alt="interier-2"></div>
+       <div class="slide interier-3"><img src="image/interier-3.jpg" alt="interier-3"></div>
+       <div class="slide interier-4"><img src="image/interier-4.jpg" alt="interier-4"></div>
+       <div class="navigation">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label>
+        <label for="r3" class="bar"></label>
+        <label for="r4" class="bar"></label>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+
+  <div id="popup" class="popup">
+   <a class="popup-area" href="#"></a>
+   <div class="popup__body">
+    <div class="popup__content">
+     <h2 class="popup__modal-title modal-title">Оставить заявку</h2>
+     <p class="popup__modal-text">Оставьте свои данные и мы свяжемся с вами
+      в течении 30 минут</p>
+     <forme class="main__modal-forme">
+      <label><input data-validate-field="name" name="name" type="text" class="popup__input main__input-name"
+        placeholder="Введите ваше имя"></label>
+      <label><input data-validate-field="tel" name="tel" type="tel" class="popup__input main__input-phone"
+        placeholder="Введите ваш телефон"></label>
+      <button type="submit" class="popup__button-forme">Оставить заявку</button>
+      <a href="#" class="popup__close">х</a>
+     </forme>
+
+    </div>
+   </div>
+  </div>
+
+  <div id="popup-menu" class="popup-menu">
+   <a class="popup-area" href="#"></a>
+   <div class="popup-menu__body">
+    <div class="popup-menu__content">
+     <div class="wrapper-menu">
+      <h2 class="popup-menu__title modal-title">МЕНЮ</h2>
+      <div class="wrapper__food">
+       <div class="popup-menu__wrapper-food popup-menu__wrapper-food-1">
+        <h3 class="popup-menu__name-food">Бизнес ланчи</h3>
+        <div class="popup-menu__wrapper-item">
+         <div class="popup-menu__item">
+          Понедельник
+         </div>
+         <div class="popup-menu__item">
+          Вторник
+         </div>
+         <div class="popup-menu__item">
+          Среда
+         </div>
+        </div>
+       </div>
+       <div class="popup-menu__wrapper-food popup-menu__wrapper-food-1">
+        <div class="popup-menu__wrapper-item">
+         <div class="popup-menu__item">
+          Четверг
+         </div>
+         <div class="popup-menu__item">
+          Пятница
+         </div>
+        </div>
+       </div>
+       <div class="popup-menu__wrapper-food popup-menu__wrapper-food-1">
+        <h3 class="popup-menu__name-food">Вторые блюда</h3>
+       </div>
+       <div class="popup-menu__wrapper-food popup-menu__wrapper-food-1">
+        <h3 class="popup-menu__name-food">Пицца</h3>
+       </div>
+       <div id="shawarma" class="popup-menu__wrapper-food popup-menu__wrapper-food-1">
+        <h3 class="popup-menu__name-food">Шаурма</h3>
+       </div>
+       <div class="popup-menu__wrapper-food popup-menu__wrapper-food-1">
+        <h3 class="popup-menu__name-food">Винная карта</h3>
+       </div>
+      </div>
+     </div>
+     <a href="#" class="popup-menu__close">X</a>
+    </div>
+   </div>
+  </div>
+
+  <div id="popup-deliver" class="popup-deliver">
+   <a class="popup-area" href="#"></a>
+   <div class="popup-deliver__body">
+    <div class="popup-deliver__content">
+     <h2 class="popup-deliver__modal-title modal-title">Меню доставки</h2>
+     <p class="popup-deliver__text">
+      Для доставки доступны товары из категорий:
+     </p>
+     <div class="popup-deliver__menu-deliver">
+      <div class="popup-deliver__item popup-deliver__item--shawarma"><a href="#"><img
+         src="image/Food-deliver/shawarma.jpg" alt="shawarma"><span>Шаурма</span></a></div>
+      <div class="popup-deliver__item popup-deliver__item--pizza"><a href="#"><img src="image/Food-deliver/pizza.jpeg"
+         alt="pizza"><span>Пицца</span></a></div>
+      <div class="popup-deliver__item popup-deliver__item--drink"><a href="#"><img src="image/Food-deliver/cola.jpg"
+         alt="drink"><span>Напитки</span></a></div>
+      <div class="popup-deliver__item popup-deliver__item--shawarma"><a href="#"><img src="image/Food-deliver/cake.jpg"
+         alt="shawarma"><span>Десерты</span></a></div>
+     </div>
+     <a type="tel:+79509494949" class="popup__button-forme delivery-phone">
+      <span>Сделать заказ</span><img src="image/phone.svg" alt="phone">
+     </a>
+     <a href="#" class="popup-deliver__close">х</a>
+    </div>
+   </div>
+  </div>
+
+  <address id="popup-contact" class="popup-contact">
+   <a class="popup-area" href="#"></a>
+   <div class="popup-contact__body">
+    <div class="popup-contact__content">
+     <h2 class="popup-contact__modal-title modal-title">Контактная информация</h2>
+     <div class="popup-contact__address">
+      <div class="popup-contact__main-wrapper">
+       <div class="popup-contact__sub-wrapper">
+        <h3 class="popup-contact__title">Мы находимся по адресу:</h3>
+        <p class="section__modal-text">г.Острогожск, ул.Ленина</p>
+       </div>
+       <div class="popup-contact__sub-wrapper">
+        <h3 class="popup-contact__title">Режим работы:</h3>
+        <p class="section__modal-text">Понедельник-Пятница с 8:00 до 18:00</p>
+        <p class="section__modal-text">Суббота - Воскресенье с 8:00 до 16:00</p>
+       </div>
+       <div class="popup-contact__sub-wrapper">
+        <h3 class="popup-contact__title">Доступыные способы оплаты:</h3>
+        <ul class="popup-contact__pay-list">
+         <li class="popup-contact__pay-item">Безналичный расчет</li>
+         <li class="popup-contact__pay-item">Наличные</li>
+         <li class="popup-contact__pay-item">Перевод по номеру</li>
+        </ul>
+       </div>
+       <div class="popup-contact__social">
+        <h3 class="popup-contact__title">Связаться с нами:</h3>
+        <a type="tel:+79509494949"><img src="image/phone.svg" alt="phone">
+       </div>
+       </a>
+       </ul>
+      </div>
+
+      <div id="map" class="map"></div>
+     </div>
+
+     <a href="#" class="popup-contact__close">х</a>
+    </div>
+   </div>
+  </address>
+ </main>
+
+ <footer class="footer">
+  <div class="container">
+
+  </div>
+ </footer>
+
+
+
+
+
+
+ <script src="https://api-maps.yandex.ru/2.1/?apikey=c591cf85-e798-493f-9556-fdc13b78606b
+&lang=ru_RU" type="text/javascript"></script>
+
+ <script src="js/main.js"></script>
+</body>
+
+</html>
